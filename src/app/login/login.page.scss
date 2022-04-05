@@ -1,0 +1,91 @@
+@import '../app.component.scss';
+
+ion-content {
+    --background: url(../../assets/shapes.svg);
+    --background-attachment: fixed;
+    --background-position: center center;
+    --background-size: cover; 
+    
+}
+
+img {
+    display:flex;
+    width: 100%;
+    height: auto;
+}
+
+
+
+.section {
+    position: fixed;
+    bottom: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: #43C4AC;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 60%;
+
+    
+}
+
+h1{
+    margin: 5px;
+    text-align: center;
+    font-size: 30px;
+
+}
+
+.form {
+    width: calc(100% - 100px);
+    margin: 0 auto;
+    padding: 30px 0;
+
+    p {
+        text-align: center;
+        font-size: 20px;
+        font-weight: 500;
+        color: #a6d6ca;
+        margin: 20px 0;
+    }
+
+    .form-group {
+        position: relative;
+        margin: 10px 0;
+    
+        // label {
+        //     font-size: 14px;
+        //     font-weight: 400;
+        //     position: relative;
+        //     bottom: 5px;
+        //     left: 5px;
+        //     color: var(--ion-custom-primary);
+        // }
+
+        .form-control {
+            @include form-control();
+            background-color: var(--ion-color-light-tint);
+            border-radius: 5px;
+        
+            &:focus  {
+                outline: none;
+            }
+    
+            &::placeholder  {
+                color: var(--ion-color-medium-tint);
+            }
+    
+            &:focus::placeholder  {
+                color: var(--ion-custom-tint);
+            }
+        }
+    }
+
+    ion-label {
+        font-size: 12px;
+        font-weight: 500;
+        text-align: center
+    }
+
+}
+
