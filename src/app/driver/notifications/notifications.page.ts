@@ -13,12 +13,12 @@ export class NotificationsPage implements OnInit {
   }
 
   acceptTrip() {
-
+    console.log('accept trip');
 
   }
 
   rejectTrip() {
-    
+    console.log('reject trip');
   }
 
 

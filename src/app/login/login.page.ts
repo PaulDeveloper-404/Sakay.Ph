@@ -43,11 +43,11 @@ export class LoginPage implements OnInit {
   checkTime() {
     let date: Date = new Date();
 
-    if(date.getHours() >= 0 && date.getHours() < 12) {
+    if(date.getHours() >= 0 && date.getHours() < 13) {
       if(date.getMinutes() >= 0 && date.getMinutes() < 59) {
         this.roundClock = 'Good morning'
       }
-    } else if (date.getHours() >= 12 && date.getHours() < 18) {
+    } else if (date.getHours() >= 14 && date.getHours() < 18) {
       if(date.getMinutes() >= 0 && date.getMinutes() < 59) {
         this.roundClock = 'Good Afternoon'
       }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ModalController } from '@ionic/angular';
 
 @Component({
   selector: 'app-edit-trip',
@@ -7,8 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EditTripComponent implements OnInit {
 
-  constructor() { }
+  constructor(private modalControl: ModalController) { }
 
   ngOnInit() {}
+
+  editTripDismiss() {
+    this.modalControl.dismiss();
+  }
 
 }

@@ -1,3 +1,36 @@
-<p>
-  create-trip works!
-</p>
+<ion-card>
+  <ion-item>
+  <ion-icon name="create"></ion-icon>
+  <ion-label>CREATE TRIP</ion-label>
+</ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Origin</ion-label>
+    <ion-input placeholder="Your Current Location"></ion-input>
+</ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Destination</ion-label>
+    <ion-input placeholder="Your Destination"></ion-input>
+</ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Number of Passenger</ion-label>
+    <ion-input placeholder="Number of Passengers"></ion-input>
+</ion-item>
+
+  <ion-item>
+      <ion-label position="floating">Line Code</ion-label>
+      <ion-input placeholder="Ex.Yellow"></ion-input>
+</ion-item>
+
+ 
+  <ion-button color="success" (click)="createTripDismiss()">
+  <ion-icon slot="start" name="checkmark-circle"></ion-icon>
+   Submit
+</ion-button>
+</ion-card>
+
+
+
+

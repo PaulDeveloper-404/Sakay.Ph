@@ -12,4 +12,12 @@ export class DriverAccountPage implements OnInit {
   ngOnInit() {
   }
 
+  editProfile() {
+    console.log('edit profile');
+  }
+
+  logout() {
+    console.log('logout');
+  }
+
 }

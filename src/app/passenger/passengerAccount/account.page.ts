@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AccountPage implements OnInit {
 
+  imgUrl: any;
+
   constructor() { }
 
   ngOnInit() {
   }
 
+  editProfile() {
+    console.log('edit profile');
+  }
+
+  logout() {
+    console.log('logout');
+  }
 }
