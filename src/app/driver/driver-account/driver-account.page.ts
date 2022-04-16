@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DriverAccountPage implements OnInit {
 
+  user: any;
+
   constructor() { }
 
   ngOnInit() {

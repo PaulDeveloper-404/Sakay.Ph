@@ -1,12 +1,13 @@
 @import '../app.component.scss';
 
 ion-content {
-    --background: url(../../assets/shapes.svg);
+    --background: url(../../assets/shapes.svg); 
     --background-attachment: fixed;
     --background-position: center center;
     --background-size: cover; 
     
 }
+
 
 img {
     display:flex;
