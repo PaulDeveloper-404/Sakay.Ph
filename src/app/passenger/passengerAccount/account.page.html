@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Passenger Account</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+  <ion-content>
+    <div class="user-container">
+      <div class="user-info">
+        <img src="../../assets/shapes.svg" alt="profile">
+      </div> 
+
+      <ion-item>
+        <ion-label position="floating">Name<ion-text color="danger"></ion-text></ion-label>
+        <ion-input required type="text" oninput="handleLastNameValue(event)"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Email<ion-text color="danger"></ion-text></ion-label>
+        <ion-input required type="text" oninput="handleLastNameValue(event)"></ion-input>
+      </ion-item>
+
+      
+      <ion-item>
+        <ion-label position="floating">Password<ion-text color="danger"></ion-text></ion-label>
+        <ion-input required type="text" oninput="handleLastNameValue(event)"></ion-input>
+      </ion-item>
+
+      
+      <ion-item>
+        <ion-label position="floating">Confirm Number<ion-text color="danger"></ion-text></ion-label>
+        <ion-input required type="text" oninput="handleLastNameValue(event)"></ion-input>
+      </ion-item>      
+      
+      
+
+       <!-- <ion-card-content>
+    <form [formGroup]="loginForm">
+      <ion-item>
+        <ion-input formControlName="email" placeholder="Email Address">
+        </ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input formControlName="password" placeholder="Password">
+        </ion-input>
+    </ion-item>
+    <ion-card-content> -->
+
+  <!-- <div class="user-info">
+       <h1>{{ user.username }}</h1>
+        <p>{{ user.email }}</p>
+        <p>{{ user.password }}</p>
+        <p>{{ user.contactnumber}}</p>
+    </div> -->
+    </div>
+     <div class="user-info-buttons">
+        <ion-button color="success" (click)="editProfile()">Update Profile</ion-button>
+      </div>
+  </ion-content>
+    
+

@@ -1,0 +1,7 @@
+{
+  "name": "Sakay.Ph",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

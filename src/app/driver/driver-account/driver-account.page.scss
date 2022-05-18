@@ -1,0 +1,41 @@
+.header {
+    background-color: #F1592A;
+    padding: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    z-index: 1;
+    
+    h4 {
+        color: #fff;
+    }
+}
+
+.user-container {
+    padding: 15px;
+    
+    .user-info {  
+        text-align: center;
+        padding: 20px;
+
+        img { 
+            margin: 0 auto;
+            height: 120px;
+            width: 120px;
+            border-radius: 100px;
+        }
+
+        .names {
+            margin: 10px 0;
+
+            p {
+                color: var(--ion-custom-shade);
+            }
+        }
+    }
+}
+.user-info-buttons {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 60%;
+    padding: 20px;
+}
