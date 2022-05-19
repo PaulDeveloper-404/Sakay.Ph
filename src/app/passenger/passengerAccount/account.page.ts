@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router } from '@angular/router';
+import { ModalController } from '@ionic/angular';
+import { EditPassengerComponent } from 'src/app/dialog/edit-passenger/edit-passenger.component';
 @Component({
   selector: 'app-account',
   templateUrl: './account.page.html',
@@ -9,16 +11,20 @@ export class AccountPage implements OnInit {
   user:any;
   imgUrl: any;
 
-  constructor() { }
+  constructor(private modalControl:ModalController,public router:Router) { }
 
   ngOnInit() {
   }
 
-  editProfile() {
-    console.log('edit profile');
+  async editProfile() {
+    const modal = await this.modalControl.create({
+      component: EditPassengerComponent,
+    });
+
+    await modal.present();
   }
 
   logout() {
-    console.log('logout');
+    this.router.navigateByUrl('/login');
   }
 }

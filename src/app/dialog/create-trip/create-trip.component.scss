@@ -1,9 +1,18 @@
 ion-card {
-    --ion-background-color: #e6eeed;
-    
+  --ion-background-color: #e6eeed;
+  padding:10px;
+  border-radius: 10px;
+  margin-top: 30%;
+  border: #43C4AC 2px solid;
+  
 }
 
 ion-item {
-  font-size: 20px;
+font-size: 20px;
 }
 
+ion-button {
+--padding:5px;
+--background: #ffb74d;
+
+}

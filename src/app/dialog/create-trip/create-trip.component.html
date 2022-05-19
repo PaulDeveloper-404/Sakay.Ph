@@ -1,4 +1,7 @@
 <ion-card>
+  <ion-button (click)="createTripDismiss()">
+    <ion-icon name="arrow-back"></ion-icon>
+  </ion-button>
   <ion-item>
   <ion-icon name="create"></ion-icon>
   <ion-label>CREATE TRIP</ion-label>
@@ -25,7 +28,7 @@
 </ion-item>
 
  
-  <ion-button color="success" (click)="createTripDismiss()">
+  <ion-button (click)="createTripDismiss()">
   <ion-icon slot="start" name="checkmark-circle"></ion-icon>
    Submit
 </ion-button>

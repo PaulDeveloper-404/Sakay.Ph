@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { ModalController } from '@ionic/angular';
 import { CreateTripComponent } from 'src/app/dialog/create-trip/create-trip.component';
 import { EditTripComponent } from 'src/app/dialog/edit-trip/edit-trip.component';
+
 
 @Component({
   selector: 'app-trips',
@@ -10,7 +12,7 @@ import { EditTripComponent } from 'src/app/dialog/edit-trip/edit-trip.component'
 })
 export class TripsPage implements OnInit {
 
-  constructor(private modalControl:ModalController) { }
+  constructor(private modalControl:ModalController,public router:Router) { }
 
   ngOnInit() {
   }
@@ -29,6 +31,9 @@ export class TripsPage implements OnInit {
     });
 
     await modal.present();
+  }
+  logout() {
+    this.router.navigateByUrl('/login');
   }
 
 }

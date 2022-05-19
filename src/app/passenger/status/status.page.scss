@@ -1,7 +1,22 @@
+ion-toolbar{
+    --background: #43C4AC;
+    --color:#fff;
+}
+ion-button {
+    --padding:5px;
+    --background: #ffb74d;
+    
+}
+
+.icon{
+    width:40px;
+    height:40px;
+    margin-right:10px;
+}
+
 ion-card {
     background-color:#43C4AC;
-    height: 140px;
-    width: 480px;
+    border-radius: 10px;
     }
 
 ion-card-title {

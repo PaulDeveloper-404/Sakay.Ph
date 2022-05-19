@@ -7,7 +7,7 @@
    <div class="section">
     <form class="form" [formGroup]="loginForm" (ngSubmit)="onCheck()">
       <h1>Hello Travelers!</h1>
-      <p>{{ roundClock }}!</p>
+      <p>{{ roundClock }}</p>
       
       <div class="form-group">
           <input class="form-control" required formControlName="username" placeholder="Username" type="text">
@@ -18,7 +18,7 @@
       </div>
 
       <button class="btn btn-primary" (click)="onCheck()" [disabled]="!loginForm.valid">Sign in</button>
-      <button class="btn btn-primary" (click)="signUp()">Signup</button>--> 
+      <button class="btn btn-primary" (click)="signUp()">Signup</button> 
     </form>
   </div>
 </ion-content>  

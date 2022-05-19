@@ -1,9 +1,50 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Jeeps Nearby</ion-title>
+    <ion-title>JeepsNearby</ion-title>
+    <ion-buttons (click)="logout()" slot="end">
+      <ion-icon class="icon" name="log-in-outline"></ion-icon>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+      <h3 class="header">
+        Available Jeep
+      </h3>
+  
+  <ion-card>
+    <table>
+      <tr>
+        <td width="100%">
+          <ion-label>Destination:</ion-label>
+          <br>
+          <ion-label>Location:</ion-label>
+          <br>
+          <ion-label>Available Seats:</ion-label>
+        </td>
+        <td>
+          <ion-button>Book</ion-button>
+        </td>
+      </tr>
+    </table>
+  </ion-card>
+
+  <ion-card>
+    <table>
+      <tr>
+        <td width="100%">
+          <ion-label>Destination:</ion-label>
+          <br>
+          <ion-label>Location:</ion-label>
+          <br>
+          <ion-label>Available Seats:</ion-label>
+        </td>
+        <td>
+          <ion-button>Book</ion-button>
+        </td>
+      </tr>
+    </table>
+  </ion-card>
+ 
   
 </ion-content>

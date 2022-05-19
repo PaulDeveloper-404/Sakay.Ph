@@ -1,6 +1,9 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Passenger Account</ion-title>
+    <ion-title>Account</ion-title>
+    <ion-buttons (click)="logout()" slot="end">
+      <ion-icon class="icon" name="log-in-outline"></ion-icon>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
@@ -20,8 +23,7 @@
     
 
      <div class="user-info-buttons">
-        <ion-button color="primary" (click)="editProfile()">Edit Profile</ion-button>
-        <ion-button color="danger" (click)="logout()">Logout</ion-button>
+        <ion-button (click)="editProfile()">Edit Profile</ion-button>
       </div>
   </ion-content>
     

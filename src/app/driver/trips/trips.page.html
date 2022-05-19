@@ -1,26 +1,47 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>Trips</ion-title>
-    </ion-toolbar>
+    <ion-buttons (click)="logout()" slot="end">
+      <ion-icon class="icon" name="log-in-outline"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
 </ion-header>
-
 <ion-content>
-  <ion-button color="tertiary" (click)="createTrip()">
-    <ion-icon slot="start" name="create"></ion-icon>
-      Create Trip
-  </ion-button>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+
+      </ion-col>
+      <ion-col>
+        <ion-button (click)="createTrip()">
+          <ion-icon slot="start" name="create"></ion-icon>
+            Create Trip
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
   <ion-card>
     <ion-card-header>
       <ion-card-title>SM CITY OLONGAPO CENTRAL</ion-card-title>
       <ion-card-subtitle>J09-345</ion-card-subtitle>
       <ion-card-subtitle>8 Seats Available</ion-card-subtitle>
 
-      <ion-button color="tertiary" (click)="editTrip()">
-      <ion-icon slot="start" name="mail"></ion-icon>
-        Edit Trip
-    </ion-button>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+    
+          </ion-col>
+          <ion-col>
+            <ion-button (click)="editTrip()">
+              <ion-icon slot="start" name="mail"></ion-icon>
+                Edit Trip
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
 
-</ion-card-header>
+  </ion-card-header>
 </ion-card>
 </ion-content>
 

@@ -1,14 +1,20 @@
 ion-tab-button {
-  width:  0% auto;
   background-color: #43C4AC;
 }
 
 ion-label {
-    color: black;
-    font-weight: bold;
+ 
+  color: black;
+  font-weight: bold;
 
-    .hover {
-        color: antiquewhite;
-    }
+  .hover {
+      color: antiquewhite;
+  }
 }
 
+
+
+
+ion-icon{
+  color: #ffcc80;
+}

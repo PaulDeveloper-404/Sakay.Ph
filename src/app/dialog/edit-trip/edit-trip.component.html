@@ -1,4 +1,7 @@
 <ion-card>
+  <ion-button (click)="editTripDismiss()">
+    <ion-icon name="arrow-back"></ion-icon>
+  </ion-button>
   <ion-item>
   <ion-icon name="clipboard"></ion-icon>
   <ion-label>Edit TRIP</ion-label>
@@ -29,7 +32,7 @@
     <ion-input placeholder="Is Archived?"></ion-input>
   </ion-item>
 
-    <ion-button color="success" (click)="editTripDismiss()">
+    <ion-button (click)="editTripDismiss()">
     <ion-icon slot="start" name="checkmark-circle"></ion-icon>
  Update
 </ion-button>

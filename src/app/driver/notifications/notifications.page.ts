@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-notifications',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NotificationsPage implements OnInit {
 
-  constructor() { }
+  constructor(public router:Router) { }
 
   ngOnInit() {
   }
@@ -19,6 +20,9 @@ export class NotificationsPage implements OnInit {
 
   rejectTrip() {
     console.log('reject trip');
+  }
+  logout() {
+    this.router.navigateByUrl('/login');
   }
 
 

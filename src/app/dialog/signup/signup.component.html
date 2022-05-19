@@ -1,4 +1,7 @@
 <ion-card>
+  <ion-button (click)="signUpDismiss()">
+    <ion-icon name="arrow-back"></ion-icon>
+  </ion-button>
   <ion-item>
   <ion-icon name="person-add"></ion-icon>
   <ion-label>SIGN UP</ion-label>
@@ -31,7 +34,7 @@
 
 
  
-    <ion-button color="primary" (click)="signUpDismiss()">
+    <ion-button (click)="signUpDismiss()">
     <ion-icon slot="start" name="checkmark-circle"></ion-icon>
       Sign Up
 </ion-button>
