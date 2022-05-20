@@ -4,7 +4,8 @@ import { Router } from '@angular/router';
 import { FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
 import { ModalController } from '@ionic/angular';
 
-import { LoginService } from '../service/login.service';
+
+import { AuthService } from '../service/auth.service';
 import { SignupComponent } from '../dialog/signup/signup.component';
 
 
@@ -18,7 +19,7 @@ export class LoginPage implements OnInit {
   loginForm: FormGroup;
   roundClock: string='';
   
-  constructor(private modalControl: ModalController,private formBuild: FormBuilder,private loginService: LoginService, private routes: Router) { 
+  constructor(private modalControl: ModalController,private formBuild: FormBuilder,private authService : AuthService, private routes: Router) { 
   this.loginForm = this.formBuild.group({
     username: new FormControl('', Validators.required),
     password: new FormControl('', Validators.required)

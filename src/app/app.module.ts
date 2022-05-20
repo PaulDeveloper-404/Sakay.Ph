@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { RouteReuseStrategy } from '@angular/router';
+import { AuthService } from './service/auth.service';
 
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 
