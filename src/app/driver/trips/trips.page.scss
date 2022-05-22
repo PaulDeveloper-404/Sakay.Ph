@@ -1,17 +1,23 @@
 ion-toolbar{
-    --background: #43C4AC;
+    --background: #fff;
+    box-shadow: none;
     --color:#fff;
+    --border-style: none;
+}
+ion-title{
+    color:#ffb74d;
 }
 
 .icon{
+    color:#ffb74d;
     width:40px;
     height:40px;
     margin-right:10px;
 }
 ion-card {
-    background-color: #43C4AC;
+    background-color: #ffb74d;
     --padding:10px;
-    border-radius: 10px;    
+    border-radius: 20px;    
 }
 
 ion-card-title {
@@ -38,4 +44,18 @@ ion-button {
     
 }
 
+
+
+.btn{
+    background: #43C4AC;
+    color:#fff;
+    font-size:15px;
+    padding:10px;
+    width:100%;
+    border-radius: 50px;
+}
+
+.padding{
+    padding:20px;
+}
 

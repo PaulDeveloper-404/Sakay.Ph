@@ -1,5 +1,10 @@
+ion-tab-bar{
+    margin:10px;
+    border:#ffb74d 3px solid;
+    border-radius: 50px;
+}
 ion-tab-button {
-    background-color: #43C4AC;
+    background-color: #fff;
 }
 
 ion-label {
@@ -16,5 +21,7 @@ ion-label {
 
 
 .icon{
-    color: #ffcc80;
+    color: #ffb74d;
+    width: 30px;
+    height:30px;
 }

@@ -1,6 +1,11 @@
 ion-toolbar{
-    --background: #43C4AC;
+    --background: #fff;
+    box-shadow: none;
     --color:#fff;
+    --border-style: none;
+}
+ion-title{
+    color:#ffb74d;
 }
 ion-button {
     --padding:5px;
@@ -9,13 +14,14 @@ ion-button {
 }
 
 .icon{
+    color:#ffb74d;
     width:40px;
     height:40px;
     margin-right:10px;
 }
 
 ion-card {
-    background-color: #43C4AC;
+    background-color: #ffb74d;
     --padding:10px;
     border-radius: 10px;    
 }

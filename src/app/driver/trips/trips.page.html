@@ -1,4 +1,4 @@
-<ion-header>
+<ion-header class="ion-no-border">
   <ion-toolbar>
     <ion-title>Trips</ion-title>
     <ion-buttons (click)="logout()" slot="end">
@@ -13,10 +13,7 @@
 
       </ion-col>
       <ion-col>
-        <ion-button (click)="createTrip()">
-          <ion-icon slot="start" name="create"></ion-icon>
-            Create Trip
-        </ion-button>
+       
       </ion-col>
     </ion-row>
   </ion-grid>
@@ -33,16 +30,23 @@
     
           </ion-col>
           <ion-col>
-            <ion-button (click)="editTrip()">
-              <ion-icon slot="start" name="mail"></ion-icon>
-                Edit Trip
-            </ion-button>
+            <button class="btn" (click)="editTrip()">
+              <ion-icon slot="start" name="create"></ion-icon>
+                EDIT TRIP
+            </button>
           </ion-col>
         </ion-row>
       </ion-grid>
 
   </ion-card-header>
 </ion-card>
+
+<ion-fab vertical="bottom" horizontal="end" slot="fixed">
+  <button class="btn padding" (click)="createTrip()">
+    <ion-icon slot="start" name="add-circle"></ion-icon>
+      CREATE TRIP
+  </button>
+</ion-fab>
 </ion-content>
 
 

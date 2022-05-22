@@ -1,30 +1,50 @@
-<ion-header>
+<ion-header class="ion-no-border">
   <ion-toolbar>
-    <ion-title>Account</ion-title>
+    <ion-title>Passenger Account</ion-title>
     <ion-buttons (click)="logout()" slot="end">
       <ion-icon class="icon" name="log-in-outline"></ion-icon>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
-
-  <ion-content>
-    <div class="user-container">
-      <div class="user-info">
-        <img src="../../assets/shapes.svg" alt="profile">
-      </div> 
-
-  <!---- <div class="user-info">
-       <h1>{{ user.username }}</h1>
-        <p>{{ user.email }}</p>
-        <p>{{ user.password }}</p>
-        <p>{{ user.contactnumber}}</p>
-    </div> -->
-    </div>
-    
-
-     <div class="user-info-buttons">
-        <ion-button (click)="editProfile()">Edit Profile</ion-button>
+<ion-content>
+  <div class="user-container">
+    <div class="user-info">
+      <img src="../../assets/shapes.svg" alt="profile">
+    </div> 
+    <ion-card>
+      <table>
+        <tr>
+          <td width="50%" align="right">Username :</td>
+          <td width="50%">Sample</td>
+        </tr>
+        <tr>
+          <td width="50%" align="right">Email :</td>
+          <td width="50%">sample@gmail.com</td>
+        </tr>
+        <tr>
+          <td width="50%" align="right">Password :</td>
+          <td width="50%">************</td>
+        </tr>
+        <tr>
+          <td width="50%" align="right">Contact Number :</td>
+          <td width="50%">09123456789</td>
+        </tr>
+      </table>
+      <div class="user-info-buttons">
+        <button class="btn padding" (click)="editProfile()">Edit Profile</button>
       </div>
-  </ion-content>
-    
+    </ion-card>
 
+<!---- <div class="user-info">
+     <h1>{{ user.username }}</h1>
+      <p>{{ user.email }}</p>
+      <p>{{ user.password }}</p>
+      <p>{{ user.contactnumber}}</p>
+  </div> -->
+  </div>
+  
+
+      </ion-content>
+      
+  
+  

@@ -1,42 +1,48 @@
-<ion-card>
-  <ion-button (click)="editTripDismiss()">
+<ion-content>
+  <ion-button class="btn-back" (click)="editTripDismiss()">
     <ion-icon name="arrow-back"></ion-icon>
   </ion-button>
-  <ion-item>
-  <ion-icon name="clipboard"></ion-icon>
-  <ion-label>Edit TRIP</ion-label>
-</ion-item>
+  <div class="header">
+    <h1>Edit Trip</h1>
+  </div>
+  
 
-  <ion-item>
-  <ion-label position="floating">Origin</ion-label>
-  <ion-input placeholder="Your Current Location"></ion-input>
-</ion-item>
 
-  <ion-item>
-  <ion-label position="floating">Destination</ion-label>
-  <ion-input placeholder="Your Destination"></ion-input>
-</ion-item>
+    <div class="section">
+      <ion-card>
+        <ion-item>
+          <ion-label position="floating">Origin</ion-label>
+          <ion-input placeholder="Your Current Location"></ion-input>
+        </ion-item>
+        <br>
+        <ion-item>
+          <ion-label position="floating">Destination</ion-label>
+          <ion-input placeholder="Your Destination"></ion-input>
+        </ion-item>
+        <br>
+        <ion-item>
+          <ion-label position="floating">Number of Passenger</ion-label>
+          <ion-input placeholder="Number of Passengers"></ion-input>
+        </ion-item>
+        <br>
+        <ion-item>
+          <ion-label position="floating">Line Code</ion-label>
+          <ion-input placeholder="Ex.Yellow"></ion-input>
+        </ion-item>
+        <br>
+        <ion-item>
+          <ion-label position="floating">Is Archived?</ion-label>
+          <ion-input placeholder="Is Archived?"></ion-input>
+        </ion-item>
+        <br>
+        <button class="btn" (click)="editTripDismiss()">
+          Update
+        </button>
+      </ion-card>
+    </div>
 
-  <ion-item>
-  <ion-label position="floating">Number of Passenger</ion-label>
-  <ion-input placeholder="Number of Passengers"></ion-input>
-</ion-item>
-
-  <ion-item>
-    <ion-label position="floating">Line Code</ion-label>
-    <ion-input placeholder="Ex.Yellow"></ion-input>
-  </ion-item>
-
-  <ion-item>
-    <ion-label position="floating">Is Archived?</ion-label>
-    <ion-input placeholder="Is Archived?"></ion-input>
-  </ion-item>
-
-    <ion-button (click)="editTripDismiss()">
-    <ion-icon slot="start" name="checkmark-circle"></ion-icon>
- Update
-</ion-button>
-</ion-card>
+  
+</ion-content>
 
 
 

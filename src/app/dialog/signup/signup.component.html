@@ -1,44 +1,48 @@
-<ion-card>
-  <ion-button (click)="signUpDismiss()">
+<ion-content>
+  <ion-button class="btn-back" (click)="signUpDismiss()">
     <ion-icon name="arrow-back"></ion-icon>
   </ion-button>
+  <div class="header">
+    <h1>SIGN UP</h1>
+  </div>
+  
+  <div class="section">
+  <ion-card>
+    
+  
+    <ion-item>
+      <ion-label position="floating">Name</ion-label>
+      <ion-input></ion-input>
+  </ion-item>
+  
+  <br>
+    <ion-item>
+      <ion-label position="floating">Username</ion-label>
+      <ion-input></ion-input>
+  </ion-item>
+  <br>
+    <ion-item>
+      <ion-label position="floating">Password</ion-label>
+      <ion-input></ion-input>
+  </ion-item>
+  <br>
   <ion-item>
-  <ion-icon name="person-add"></ion-icon>
-  <ion-label>SIGN UP</ion-label>
-</ion-item>
-
+      <ion-label position="floating">Contact Number</ion-label>
+      <ion-input></ion-input>
+  </ion-item>
+  <br>
   <ion-item>
-    <ion-label position="floating">Name</ion-label>
+    <ion-label position="floating">Address</ion-label>
     <ion-input></ion-input>
-</ion-item>
+  </ion-item>
+  <br>
+  
+   
 
-  <ion-item>
-    <ion-label position="floating">Username</ion-label>
-    <ion-input></ion-input>
-</ion-item>
+      <button class="btn" (click)="signUpDismiss()">Sign Up</button>
+  </ion-card>
+  
 
-  <ion-item>
-    <ion-label position="floating">Password</ion-label>
-    <ion-input></ion-input>
-</ion-item>
-
-<ion-item>
-    <ion-label position="floating">Contact Number</ion-label>
-    <ion-input></ion-input>
-</ion-item>
-
-<ion-item>
-  <ion-label position="floating">Address</ion-label>
-  <ion-input></ion-input>
-</ion-item>
-
-
- 
-    <ion-button (click)="signUpDismiss()">
-    <ion-icon slot="start" name="checkmark-circle"></ion-icon>
-      Sign Up
-</ion-button>
-</ion-card>
-
-
-
+  
+  </div>
+</ion-content>
