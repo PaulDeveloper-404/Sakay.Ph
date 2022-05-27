@@ -7,6 +7,7 @@ import { ModalController } from '@ionic/angular';
 
 import { AuthService } from '../service/auth.service';
 import { SignupComponent } from '../dialog/signup/signup.component';
+import { ModalPage } from './modal/modal.page';
 
 
 @Component({
@@ -37,7 +38,14 @@ export class LoginPage implements OnInit {
     await modal.present();
   }
 
-  onCheck(){
+  async onCheck(){
+    const modal2=await this.modalControl.create({
+      component:ModalPage,
+      breakpoints: [0, 0.2],
+      initialBreakpoint: 0.2,
+      handle: false,
+    })
+    await modal2.present()
 
   }
 

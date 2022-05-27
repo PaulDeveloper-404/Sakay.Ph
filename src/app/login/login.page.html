@@ -1,7 +1,7 @@
 <ion-content>
 
   <div class="content">
-   <!----<img src="../../assets/img/jeepney.png" alt="">-->
+   <img src="assets/jeep.png" alt="">
   </div>
 
    <div class="section">
@@ -17,8 +17,8 @@
           <input class="form-control" required formControlName="password" placeholder="Password" type="password">
       </div>
 
-      <button class="btn" (click)="onCheck()" [disabled]="!loginForm.valid">Sign in</button>
-      <button class="btn" (click)="signUp()">Signup</button> 
+      <button class="btn" type="button" (click)="onCheck()" [disabled]="!loginForm.valid">Sign in</button>
+      <button class="btn" type="button" (click)="signUp()">Signup</button> 
     </form>
   </div>
 </ion-content>  
