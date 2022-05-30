@@ -8,41 +8,45 @@
   
   <div class="section">
   <ion-card>
+   <form  [formGroup]="signupForm" (ngSubmit)="onCheck()">
+
     
   
     <ion-item>
       <ion-label position="floating">Name</ion-label>
-      <ion-input></ion-input>
+      <ion-input clearInput value="" formControlName="name"></ion-input>
   </ion-item>
   
   <br>
     <ion-item>
       <ion-label position="floating">Username</ion-label>
-      <ion-input></ion-input>
+      <ion-input formControlName="username"></ion-input>
   </ion-item>
   <br>
     <ion-item>
       <ion-label position="floating">Password</ion-label>
-      <ion-input></ion-input>
+      <ion-input formControlName="password"></ion-input>
   </ion-item>
   <br>
   <ion-item>
       <ion-label position="floating">Contact Number</ion-label>
-      <ion-input></ion-input>
+      <ion-input formControlName="contactnumber"></ion-input>
   </ion-item>
   <br>
   <ion-item>
     <ion-label position="floating">Address</ion-label>
-    <ion-input></ion-input>
+    <ion-input formControlName="address"></ion-input>
   </ion-item>
   <br>
   
    
 
-      <button class="btn" (click)="signUpDismiss()">Sign Up</button>
+      <button type="submit" class="btn">Sign Up</button>
+    </form>
   </ion-card>
+
   
 
   
-  </div>
+</div>
 </ion-content>

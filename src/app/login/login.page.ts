@@ -44,6 +44,9 @@ export class LoginPage implements OnInit {
       breakpoints: [0, 0.2],
       initialBreakpoint: 0.2,
       handle: false,
+      componentProps:{
+        loginForm:this.loginForm.value
+      }
     })
     await modal2.present()
 
