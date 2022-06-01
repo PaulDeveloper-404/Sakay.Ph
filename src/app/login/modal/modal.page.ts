@@ -9,6 +9,7 @@ import { AuthService } from 'src/app/service/auth.service';
 })
 export class ModalPage implements OnInit {
   loginForm;
+  item: any;
 
   constructor(public router:Router,private authService:AuthService) { }
 
@@ -16,18 +17,24 @@ export class ModalPage implements OnInit {
   }
 
   driver(){
-    //this.router.navigateByUrl('/login');
     this.authService.loginDriver(this.loginForm).subscribe((data:any)=>{
       console.log(data);
+      if(data.result == true){
+        localStorage.setItem('CurrentUser',  JSON.stringify(data.payload[0]));
+        this.router.navigateByUrl('/driver');
+      }
     })
-
+    
   }
-
+  
   passenger(){
-    //this.router.navigateByUrl('/login');
     console.log(this.loginForm)
     this.authService.loginUser(JSON.stringify(this.loginForm)).subscribe((data:any)=>{
       console.log(data);
+      if(data.result == true){
+        localStorage.setItem('CurrentUser',  JSON.stringify(data.payload[0]));
+        this.router.navigateByUrl('/passenger');
+      }
     })
 
   }

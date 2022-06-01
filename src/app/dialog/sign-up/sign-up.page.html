@@ -1,5 +1,5 @@
 <ion-content>
-  <ion-button class="btn-back" (click)="signUpDismiss()">
+  <ion-button class="btn-back" (click)="back()">
     <ion-icon name="arrow-back"></ion-icon>
   </ion-button>
   <div class="header">
@@ -8,7 +8,7 @@
   
   <div class="section">
   <ion-card>
-   <form  [formGroup]="signupForm" >
+   <form  [formGroup]="signupForm"  (ngSubmit)="onCheck()">
 
     
   
@@ -20,28 +20,27 @@
   <br>
     <ion-item>
       <ion-label position="floating">Username</ion-label>
-      <ion-input formControlName="username"></ion-input>
+      <ion-input type="email" formControlName="username"></ion-input>
   </ion-item>
   <br>
     <ion-item>
       <ion-label position="floating">Password</ion-label>
-      <ion-input formControlName="password"></ion-input>
+      <ion-input type="password" formControlName="password"></ion-input>
   </ion-item>
   <br>
   <ion-item>
       <ion-label position="floating">Contact Number</ion-label>
-      <ion-input formControlName="contactnumber"></ion-input>
+      <ion-input type="number" formControlName="contactnumber"></ion-input>
   </ion-item>
   <br>
   <ion-item>
     <ion-label position="floating">Address</ion-label>
     <ion-input formControlName="address"></ion-input>
   </ion-item>
-  <br>
-  
-   
 
-      <button type="button" (click)="onCheck()" class="btn">Sign Up</button>
+<br>
+      <button type="submit" class="btn">Sign Up</button>
+      
     </form>
   </ion-card>
 
@@ -49,4 +48,7 @@
 
   
 </div>
+<br>
+      <br>
+      <br>
 </ion-content>

@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { ModalController } from '@ionic/angular';
 import { CreateTripComponent } from 'src/app/dialog/create-trip/create-trip.component';
 import { EditTripComponent } from 'src/app/dialog/edit-trip/edit-trip.component';
+import { TripsService } from 'src/app/service/trips.service';
 
 
 @Component({
@@ -11,18 +12,23 @@ import { EditTripComponent } from 'src/app/dialog/edit-trip/edit-trip.component'
   styleUrls: ['./trips.page.scss'],
 })
 export class TripsPage implements OnInit {
+  trip: any;
 
-  constructor(private modalControl:ModalController,public router:Router) { }
+  constructor(private trips: TripsService,private modalControl:ModalController,public router:Router) { }
 
   ngOnInit() {
+    this.getTrips();
   }
 
   async createTrip() {
-    const modal = await this.modalControl.create({
-      component: CreateTripComponent,
-    });
 
-    await modal.present();
+    this.router.navigateByUrl('/createtrip');
+
+    // const modal = await this.modalControl.create({
+    //   component: CreateTripComponent,
+    // });
+
+    // await modal.present();
   }
 
   async editTrip() {
@@ -36,4 +42,12 @@ export class TripsPage implements OnInit {
     this.router.navigateByUrl('/login');
   }
 
+  getTrips(){
+      this.trips.getTrips().subscribe((res:any)=>{
+          this.trip = res.payload;
+          
+      })
+  }
+
 }
+

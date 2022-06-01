@@ -10,7 +10,12 @@ import { EditDriverComponent } from 'src/app/dialog/edit-driver/edit-driver.comp
 export class DriverAccountPage implements OnInit {
 
   user: any;
-
+  driver_id: any = JSON.parse(localStorage.getItem('CurrentUser')).driver_id;
+  driver_address:any  = JSON.parse(localStorage.getItem('CurrentUser')).driver_address;
+  driver_contact:any  = JSON.parse(localStorage.getItem('CurrentUser')).driver_contact;
+  driver_name:any = JSON.parse(localStorage.getItem('CurrentUser')).driver_name;
+  driver_uname:any = JSON.parse(localStorage.getItem('CurrentUser')).driver_uname;
+  
   constructor(private modalControl:ModalController,public router:Router) { }
 
   ngOnInit() {

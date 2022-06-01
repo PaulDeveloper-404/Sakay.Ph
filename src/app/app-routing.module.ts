@@ -20,6 +20,14 @@ const routes: Routes = [
     path: 'driver',
     loadChildren: () => import('./driver/driver.module').then( m => m.DriverPageModule)
   },
+  {
+    path: 'sign-up',
+    loadChildren: () => import('./dialog/sign-up/sign-up.module').then( m => m.SignUpPageModule)
+  },
+  {
+    path: 'createtrip',
+    loadChildren: () => import('./dialog/createtrip/createtrip.module').then( m => m.CreatetripPageModule)
+  },
 ];
 
 

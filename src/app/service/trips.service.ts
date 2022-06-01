@@ -21,8 +21,8 @@ export class TripsService {
     return this.http.post(`${this.apiUrl}showreserve/${id}`, '');
   }
 
-  driverNotif() {
-    return this.http.post(`${this.apiUrl}drivernotif`, '');
+  driverNotif(id: any) {
+    return this.http.post(`${this.apiUrl}drivernotif/${id}`, '');
   }
 
   deleteReserve(id: any) {

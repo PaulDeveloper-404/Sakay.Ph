@@ -30,12 +30,13 @@ export class LoginPage implements OnInit {
   ngOnInit() {
   }
 
-  async signUp() {
-    const modal = await this.modalControl.create({
-      component: SignupComponent,
-    });
+  signUp() {
+  this.routes.navigate(['/sign-up']);
+    // const modal = await this.modalControl.create({
+    //   component: SignupComponent,
+    // });
 
-    await modal.present();
+    // await modal.present();
   }
 
   async onCheck(){
@@ -47,6 +48,7 @@ export class LoginPage implements OnInit {
       componentProps:{
         loginForm:this.loginForm.value
       }
+      
     })
     await modal2.present()
 

@@ -12,39 +12,37 @@
         Available Jeep
       </h3>
   
-  <ion-card>
+  <ion-card *ngFor="let trip of tripsData">
     <table>
       <tr>
         <td width="60%">
-          <ion-label>Destination:</ion-label>
+          <ion-label>Destination: {{ trip.trips_destination }}</ion-label>
           <br>
-          <ion-label>Location:</ion-label>
+          <ion-label>Location: {{ trip.trips_origin }}</ion-label>
           <br>
-          <ion-label>Available Seats:</ion-label>
+          <ion-label>Available Seats: {{ trip.trips_passenger }}</ion-label>
         </td>
         <td>
-          <button class="btn padding">Book Now</button>
+          <button class="btn padding" (click)="bookNowClick(trip)">Book Now</button>
         </td>
       </tr>
     </table>
   </ion-card>
+  <!-- driver_id: 1
+trips_bodynum: "J09-234"
+trips_destination: "SM Gate"
+trips_id: 5
+trips_isArchived: 1
+trips_origin: "Sta. Rita (Pepsi)"
+trips_passenger: "12" -->
 
-  <ion-card>
-    <table>
-      <tr>
-        <td width="60%">
-          <ion-label>Destination:</ion-label>
-          <br>
-          <ion-label>Location:</ion-label>
-          <br>
-          <ion-label>Available Seats:</ion-label>
-        </td>
-        <td>
-          <button class="btn padding">Book Now</button>
-        </td>
-      </tr>
-    </table>
-  </ion-card>
- 
+<!-- trips_id	
+users_id	
+reserve_current	
+reserve_destination	
+reserve_status	
+reserve_timestamp	
+
+ -->
   
 </ion-content>

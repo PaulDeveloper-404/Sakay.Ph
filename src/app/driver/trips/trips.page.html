@@ -18,12 +18,13 @@
     </ion-row>
   </ion-grid>
 
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>SM CITY OLONGAPO CENTRAL</ion-card-title>
-      <ion-card-subtitle>J09-345</ion-card-subtitle>
-      <ion-card-subtitle>8 Seats Available</ion-card-subtitle>
+  <ion-card *ngFor="let item of trip">
+    <ion-card-header  >
 
+          <ion-card-title>Fron:{{item.trips_origin}} </ion-card-title>
+          <ion-card-subtitle>TO: {{item.trips_destination}} </ion-card-subtitle>
+          <ion-card-subtitle>{{item.trips_passenger}} Seats Available</ion-card-subtitle>
+    
       <ion-grid>
         <ion-row>
           <ion-col>

@@ -7,11 +7,11 @@
   </ion-toolbar>
 </ion-header>
 <ion-content>
-  <ion-card>
+  <ion-card *ngFor="let data of trip">
     <ion-card-header>
-      <ion-card-title>JOYCE ISLA</ion-card-title>
-      <ion-card-subtitle>FROM: STA.RITA</ion-card-subtitle>
-      <ion-card-subtitle>TO: SM DOWNTOWN</ion-card-subtitle>
+      <ion-card-title>{{data.users_name}} </ion-card-title>
+      <ion-card-subtitle>FROM: {{data.reserve_current}} </ion-card-subtitle>
+      <ion-card-subtitle>TO: {{data.reserve_destination}} </ion-card-subtitle>
 
       <ion-grid>
         <ion-row>
