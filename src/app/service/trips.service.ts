@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
 export class TripsService {
 
   constructor(private http: HttpClient) { }
-  private apiUrl = "http://localhost/smartjeep-api/";
+  private apiUrl = "http://localhost/sakayph-api/";
 
   getTrips() {
     return this.http.post(`${this.apiUrl}showtrips`, '');
